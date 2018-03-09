@@ -1,0 +1,21 @@
+combo of glm(lasso)+pcr gave us 79 rank 
+glm lasso + elastic _ pcr = 84
+only plsr gave us 0.44
+glm lasso + pcr + plsr = 0.4380
+only pcr gave us = 0.4378 150 rank 
+{
+did scale and then used glm standardize false + pcr 
+glm standardize true ncomp = 1 
+glm standardize true ncomp = 3
+} Nothing worked 
+
+knnreg + glmnet ridge + pcr = 96
+nusta lda without prior 0.4714
+fakta lasso = 0.4389
+fakta ridge = 0.4371
+nusta lda with prior = 0.6794
+nusta svm = 0.6794
+
+so far normalization and then standardization in glm(lasso)+pcr is the best 
+
+glm ridge + PCR = gave us 0.4323 79th rank wow! 
